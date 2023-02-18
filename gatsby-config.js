@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Theme Carbon',
+    title: 'Barrierefreie Hotels Berlin',
     description: 'A Gatsby theme for the carbon design system',
     keywords: 'gatsby,theme,carbon',
+    lang: 'en',
   },
   pathPrefix: `/gtc`,
   plugins: [
@@ -22,11 +23,7 @@ module.exports = {
       resolve: 'gatsby-theme-carbon',
       options: {
         mediumAccount: 'carbondesign',
-        repository: {
-          baseUrl:
-            'https://github.com/carbon-design-system/gatsby-theme-carbon',
-          subDirectory: '/packages/example',
-        },
+        isSwitcherEnabled: false,
       },
     },
   ],

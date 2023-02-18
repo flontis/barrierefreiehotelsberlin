@@ -1,43 +1,38 @@
 import React from 'react';
-import { HomepageBanner, HomepageCallout } from 'gatsby-theme-carbon';
+import {HomepageBanner, HomepageCallout, ImageCard} from 'gatsby-theme-carbon';
 import HomepageTemplate from 'gatsby-theme-carbon/src/templates/Homepage';
 import { calloutLink } from './Homepage.module.scss';
 
 import Carbon from './carbon.jpg';
+import Profile from './fwuensche-rot.jpg';
 
-const FirstLeftText = () => <p>Callout component</p>;
+const FirstLeftText = () => <p>Barrierefreiheit -<br/> persönlich geprüft</p>;
 
 const FirstRightText = () => (
   <p>
-    This is a callout component. You can edit the contents by updating the{' '}
-    <a href="https://github.com/carbon-design-system/gatsby-theme-carbon/blob/5fe12de31bb19fbfa2cab7c69cd942f55aa06f79/packages/example/src/gatsby-theme-carbon/templates/Homepage.js">
-      pre-shadowed homepage template
-    </a>
-    . You can also provide <code>color</code> and <code>backgroundColor</code>{' '}
-    props to suit your theme.
-    <a
-      className={calloutLink}
-      href="https://github.com/carbon-design-system/gatsby-theme-carbon/blob/main/packages/example/src/gatsby-theme-carbon/templates/Homepage.js">
-      Homepage source →
-    </a>
+    Barrierefreiheit kann vieles bedeuten. Allzu oft erlebt man dies als Rollstuhlfahrer bei der Buchung einer Unterkunft - vor Ort,
+      wenn es bereits zu spät ist.
+      Da ich in Berlin lebe und beruflich viel Reise sowie Geschäftsreisen organisiere, werde ich hier von mir geprüfte Hotels auflisten und von meinen Erfahrungen berichten.
+
   </p>
 );
 
-const SecondLeftText = () => <p>Callout component</p>;
+const SecondLeftText = () => (
+
+    <img src={'../../images/fwuensche-rot.jpg'} alt={"Me"} />
+
+)
+
 
 const SecondRightText = () => (
   <p>
-    You can also not use these components at all by not providing the callout
-    props to the template or writing your own template.
-    <a
-      className={calloutLink}
-      href="https://github.com/carbon-design-system/gatsby-theme-carbon/blob/main/packages/example/src/gatsby-theme-carbon/templates/Homepage.js">
-      Homepage source →
-    </a>
+    Das bin ich. Seit meiner Geburt sitze ich aufgrund von spinaler Muskelatrophie im Rollstuhl
+      und bin auch bei meinen Reisen auf barrierefreie Unterkünfte sowie auf Unterstützung durch meine Persönlichen
+      Assistenten angewiesen.
   </p>
 );
 
-const BannerText = () => <h1>Carbon Gatsby theme</h1>;
+const BannerText = () => <h1>Barrierefreie Hotels in Berlin</h1>;
 
 const customProps = {
   Banner: <HomepageBanner renderText={BannerText} image={Carbon} />,
@@ -54,7 +49,7 @@ const customProps = {
       leftText={SecondLeftText}
       rightText={SecondRightText}
       color="white"
-      backgroundColor="#061f80"
+      backgroundColor="#030303"
     />
   ),
 };

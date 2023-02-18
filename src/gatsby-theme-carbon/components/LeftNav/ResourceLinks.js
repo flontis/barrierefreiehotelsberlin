@@ -3,16 +3,12 @@ import ResourceLinks from 'gatsby-theme-carbon/src/components/LeftNav/ResourceLi
 
 const links = [
   {
-    title: 'Github',
-    href: 'https://github.com/carbon-design-system/gatsby-theme-carbon',
+    title: 'Kontakt',
+    href: 'https://florianwuensche.de/',
   },
   {
-    title: 'Carbon',
+    title: 'Website Design',
     href: 'https://www.carbondesignsystem.com',
-  },
-  {
-    title: 'Configuration guide',
-    href: '/guides/configuration',
   },
 ];
 

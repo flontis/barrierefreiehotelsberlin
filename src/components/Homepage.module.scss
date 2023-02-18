@@ -4,3 +4,7 @@
   position: relative;
   top: $spacing-06; //margin-top doesn't work on table-cell, and padding-top looks weird on focus
 }
+.logo {
+  fill: $carbon--gray-10;
+  margin-top: $spacing-07;
+}
